@@ -1,0 +1,9 @@
+baseURL       = "https://seekerandskeptic.com/"
+languageCode  = "en-gb"
+title         = "The Seeker and the Skeptic"
+theme         = "sas"
+enableGitInfo = true
+
+[params]
+description    = "Some description"
+
