@@ -1,0 +1,35 @@
+head
+  {{ partial "google-analytics" .Site.Params.GoogleAnalytics }}
+
+  meta charset="utf-8"
+  meta http-equiv="X-UA-Compatible" content="IE=edge"
+  meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+
+  title {{ .Site.Title }}
+  meta name="description" content="{{ .Site.Params.description }}"
+  meta name="author" content="{{ .Site.Params.author }}"
+
+  meta property="og:url" content="{{ absURL .URL}}"
+  meta property="og:title" content="{{if .Param "social_title"}}{{.Param "social_title"}}{{else}}{{ .Title }}{{end}}"
+  meta property="og:description" content="{{if .Param "Summary"}}{{.Param "Summary"}}{{else}}{{ .Site.Params.description }}{{end}}"
+  meta property="og:image" content={{"/img/social-1200x630.jpg" | absURL}}
+
+  meta name="twitter:title" content="{{ .Title }}"
+  meta name="twitter:description" content="{{ .Site.Params.description }}"
+  meta name="twitter:image" content={{"/img/social-1200x630.jpg" | absURL}}
+  meta name="twitter:card" content="summary_large_image"
+
+  link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2"
+  link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2"
+  link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2"
+  link rel="manifest" href="/manifest.json?v=2"
+  link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#5bbad5"
+  meta name="theme-color" content="#0C1516"
+
+  link href="https://fonts.googleapis.com/css?family=Cabin:400,600&display=swap" rel="stylesheet"
+  link href="https://fonts.googleapis.com/css?family=PT+Sans:400,600&display=swap" rel="stylesheet"
+  link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+
+  {{ partial "css" . }}
+  {{ partial "javascript" . }}
+

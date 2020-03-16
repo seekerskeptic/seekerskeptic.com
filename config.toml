@@ -5,5 +5,13 @@ theme         = "sas"
 enableGitInfo = true
 
 [params]
-description    = "Some description"
+description = "A podcast about fringe ideas"
+author      = "Cat and Rebecca"
+youtubeUrl  = "https://www.youtube.com/channel/UCsAvzf-XD53ebVyH1liNZtQ"
+videoUrl    = "https://www.youtube.com/watch?v=ncumD8VozLQ"
+podcastUrl  = "https://plinkhq.com/i/1437772161"
+twitterUrl  = "https://twitter.com/seekerskeptic"
+
+[params.GoogleAnalytics]
+id = "UA-XXX-2"
 

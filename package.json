@@ -1,0 +1,14 @@
+{
+  "name": "seeker-and-the-skeptic",
+  "version": "1.0.0",
+  "description": "Seeker and the Skeptic",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "foundation-sites": "^6.5.3",
+    "lity": "^2.4.0",
+    "open-iconic": "^1.1.1"
+  },
+  "repository": "https://github.com/theseekerandtheskeptic/website",
+  "author": "Rebecca Fox"
+}

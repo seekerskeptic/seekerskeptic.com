@@ -1,0 +1,11 @@
+{{ $jquery := resources.Get "js/jquery.min.js" }}
+{{ $pixi := resources.Get "js/pixi.min.js" }}
+{{ $lity := resources.Get "js/lity.min.js" }}
+{{ $aos := resources.Get "js/aos.min.js" }}
+{{ $libs := slice $jquery $pixi $lity $aos | resources.Concat "js/libs.js" | resources.Minify | resources.Fingerprint }}
+script src="{{ $libs.Permalink }}" integrity="{{$libs.Data.Integrity}}"
+
+{{ $app := resources.Get "js/app.js" }}
+{{ $js := slice $app | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+script defer="true" src="{{ $js.Permalink }}" integrity="{{$js.Data.Integrity}}" 
+
