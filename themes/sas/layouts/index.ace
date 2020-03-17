@@ -23,51 +23,52 @@ body
                 span <strong>Learn</strong> more about us
           .continue
             i.fa.fa-chevron-down.float
-  section
-    article#main
-      h3 {{.Site.Params.Description}}
-      p Spiritually inclined Seekers and scientifically inclined Skeptics spend too much time pulling each other’s hair and not enough time braiding it. If you’ve been accused of committing logical fallacies or been shamed for being close minded you know that, especially online, things between our tribes have become a little fraught.
-      p The Seeker and The Skeptic is a podcast in which two friends explore fringe, paranormal and spiritual topics from two completely different perspectives… and somehow remain friends! We investigate fringe topics in the field by hunting UFO’s, meeting occultists and taking ayahuasca. Then we sit down with our research notes and microphones to discuss, debate and celebrate topics at the fringes of reality.
-      p Though our approaches to life and ideas are very different, we share a sense of humour and a commitment to talking honestly about what we believe and why. We think that talking to people with different perspectives and challenging our own beliefs is vital to growing as a Seeker or a Skeptic and we have a great time doing it.
-      p We’re eager to share the things we find at the fringe with our listeners whether they be disturbing or delightful and we hope to inspire you all to speak to people on the other side of the Seeker/Skeptic divide.
-      .ctas
-        a.youtube href="{{.Site.Params.youtubeUrl}}" target="_blank"
-          i.fa.fa-youtube
-          span Youtube
-        a.podcast href="{{.Site.Params.podcastUrl}}" target="_blank"
-          i.fa.fa-rss
-          span Podcast
-        a.twitter href="{{.Site.Params.twitterUrl}}" target="_blank"
-          i.fa.fa-twitter
-          span Twitter
-  section#authors
-    h3 About the authors
-    .wrapper
-      article#anthony
-        h3
-          img src="/cat.jpg" alt="Anthony Magnabosco"
-          span Cat Rose
-        p Cat Rose Neligan is from London and currently lives by the sea, in Brighton, UK. She works with creative introverts who dream of making a living from their art, in a way that feels good to them. She does this through her weekly show, <a href="http://www.thecreativeintrovert.com" target="_blank">The Creative Introvert</a>, as well as 1:1 coaching that combines her love for psychology... and astrology.
-        .links
-          a href="http://www.thecreativeintrovert.com" target="_blank"
-            i.fa.fa-link
-          a href="https://www.instagram.com/creativeintro" target="_blank"
-            i.fa.fa-instagram
-          a href="https://twitter.com/creativeintro" target="_blank"
-            i.fa.fa-twitter
-          a href=" https://www.youtube.com/cat-neligan" target="_blank"
+  .pattern 
+    section
+      article#main
+        h3 {{.Site.Params.Description}}
+        p Spiritually inclined Seekers and scientifically inclined Skeptics spend too much time pulling each other’s hair and not enough time braiding it. If you’ve been accused of committing logical fallacies or been shamed for being close minded you know that, especially online, things between our tribes have become a little fraught.
+        p The Seeker and The Skeptic is a podcast in which two friends explore fringe, paranormal and spiritual topics from two completely different perspectives… and somehow remain friends! We investigate fringe topics in the field by hunting UFO’s, meeting occultists and taking ayahuasca. Then we sit down with our research notes and microphones to discuss, debate and celebrate topics at the fringes of reality.
+        p Though our approaches to life and ideas are very different, we share a sense of humour and a commitment to talking honestly about what we believe and why. We think that talking to people with different perspectives and challenging our own beliefs is vital to growing as a Seeker or a Skeptic and we have a great time doing it.
+        p We’re eager to share the things we find at the fringe with our listeners whether they be disturbing or delightful and we hope to inspire you all to speak to people on the other side of the Seeker/Skeptic divide.
+        .ctas
+          a.youtube href="{{.Site.Params.youtubeUrl}}" target="_blank"
             i.fa.fa-youtube
-      article#rebecca
-        h3 
-          img src="/rebecca.jpg" alt="Anthony Magnabosco"
-          span Rebecca Fox
-        p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
-        .links
-          a href="https://twitter.com/rebeccaonpaper" target="_blank"
+            span Youtube
+          a.podcast href="{{.Site.Params.podcastUrl}}" target="_blank"
+            i.fa.fa-rss
+            span Podcast
+          a.twitter href="{{.Site.Params.twitterUrl}}" target="_blank"
             i.fa.fa-twitter
-          a href="https://instagram.com/rebeccaonpaper" target="_blank"
-            i.fa.fa-instagram
-          a href="https://rebeccaonpaper.com/" target="_blank"
-            i.fa.fa-link
-  #footer
-    img src="/cartoons/all-table.svg"
+            span Twitter
+    section#authors
+      h3 About the authors
+      .wrapper
+        article#anthony
+          h3
+            img src="/cat.jpg" alt="Anthony Magnabosco"
+            span Cat Rose
+          p Cat Rose Neligan is from London and currently lives by the sea, in Brighton, UK. She works with creative introverts who dream of making a living from their art, in a way that feels good to them. She does this through her weekly show, <a href="http://www.thecreativeintrovert.com" target="_blank">The Creative Introvert</a>, as well as 1:1 coaching that combines her love for psychology... and astrology.
+          .links
+            a href="http://www.thecreativeintrovert.com" target="_blank"
+              i.fa.fa-link
+            a href="https://www.instagram.com/creativeintro" target="_blank"
+              i.fa.fa-instagram
+            a href="https://twitter.com/creativeintro" target="_blank"
+              i.fa.fa-twitter
+            a href=" https://www.youtube.com/cat-neligan" target="_blank"
+              i.fa.fa-youtube
+        article#rebecca
+          h3 
+            img src="/rebecca.jpg" alt="Anthony Magnabosco"
+            span Rebecca Fox
+          p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
+          .links
+            a href="https://twitter.com/rebeccaonpaper" target="_blank"
+              i.fa.fa-twitter
+            a href="https://instagram.com/rebeccaonpaper" target="_blank"
+              i.fa.fa-instagram
+            a href="https://rebeccaonpaper.com/" target="_blank"
+              i.fa.fa-link
+    #footer
+      img src="/cartoons/all-table.svg"
