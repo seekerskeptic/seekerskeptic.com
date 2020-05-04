@@ -192,7 +192,7 @@ p
   -moz-font-smoothing: antialiased !important
   text-rendering: optimizelegibility !important
   letter-spacing: .03em
-  line-hveight: 1.5em
+  line-height: 1.5em
 
 article
   +breakpoint(medium)
@@ -202,44 +202,11 @@ article
     margin-top: 2em
     margin-bottom: 1em
 
-  blockquote
-    display: block;
-    border-width: 1px 0
-    border-style: solid
-    border-color: #eee
-    padding: 1.5em 0 0.5em
-    margin: 1.5em 0
-    position: relative
-
-    +breakpoint(large)
-      padding-left: 8em
-      padding-right: 8em
-      padding-top: 2em
-      padding-bottom: 1em
-      margin-top: 3em
-      margin-bottom: 3em
-
-  blockquote:before
-    content: '\201C'
-    position: absolute
-    top: 0em
-    left: 50%
-    transform: translate(-50%, -50%)
-    background: #fff
-    width: 3rem
-    height: 2rem
-    font: 6em/1.08em 'PT Sans', sans-serif
-    color: #666
-    text-align: center
-
-  blockquote:after
-    content: "\2014 \2003" attr(cite)
-    display: block
-    text-align: right
-    color: #cc4b37
-
-    +breakpoint(large)
-      text-align: center
+  p
+    margin-top: 21px
+    font-size: 21px
+    letter-spacing: -0.03px
+    line-height: 1.58
 
   a 
     color: black
