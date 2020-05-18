@@ -11,4 +11,4 @@
   environment = { HUGO_BASE_URL = "https://seekerskeptic.com/" }
 
 [context.develop]
-  environment = { HUGO_BASE_URL = "https://seekerskeptic.netlify.app/" }
+  environment = { HUGO_BASE_URL = "https://develop--seekerskeptic.netlify.app/" }
