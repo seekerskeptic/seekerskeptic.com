@@ -8,7 +8,7 @@
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
-  environment = { HUGO_BASE_URL = "https://seekerskeptic.netlify.app/" }
+  environment = { HUGO_BASE_URL = "https://seekerskeptic.com/" }
 
-[context.staging]
+[context.develop]
   environment = { HUGO_BASE_URL = "https://seekerskeptic.netlify.app/" }
