@@ -20,7 +20,7 @@ body
                 span <strong>Watch</strong> us on YouTube
             li.patreon
               a href="{{.Site.Params.patreonUrl}}"
-                span <strong>Support</strong> us on Patreaon
+                span <strong>Support</strong> us on Patreon
           .continue
             i.fa.fa-chevron-down.float
   .pattern#slider
