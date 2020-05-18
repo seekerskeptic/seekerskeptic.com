@@ -1,0 +1,14 @@
+
+[build]
+  publish = "public"
+
+  # Default build command.
+  command = "hugo"
+
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[context.production]
+  environment = { HUGO_BASE_URL = "https://seekerskeptic.netlify.app/" }
+
+[context.staging]
+  environment = { HUGO_BASE_URL = "https://seekerskeptic.netlify.app/" }
