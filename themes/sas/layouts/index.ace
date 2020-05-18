@@ -12,18 +12,18 @@ body
             span.the The
             span.skeptic Skeptic
           ul#nav
-            li.video
-              a href="{{.Site.Params.videoUrl}}" data-lity=""
-                span <strong>Watch</strong> a trailer
-            li.video
-              a href="{{.Site.Params.podcastUrl}}" 
+            li.podcast
+              a href="{{.Site.Params.podcastUrl}}"
                 span <strong>Listen</strong> to the show
-            li.video
-              a href="#main"
-                span <strong>Learn</strong> more about us
+            li.youtube
+              a href="{{.Site.Params.youtubeUrl}}"
+                span <strong>Watch</strong> us on YouTube
+            li.patreon
+              a href="{{.Site.Params.patreonUrl}}"
+                span <strong>Support</strong> us on Patreaon
           .continue
             i.fa.fa-chevron-down.float
-  .pattern 
+  .pattern#slider
     section
       article#main
         h3 {{.Site.Params.Description}}
@@ -33,14 +33,14 @@ body
         p We’re eager to share the things we find at the fringe with our listeners whether they be disturbing or delightful and we hope to inspire you all to speak to people on the other side of the Seeker/Skeptic divide.
         .ctas
           a.youtube href="{{.Site.Params.youtubeUrl}}" target="_blank"
-            i.fa.fa-youtube
+            i.fab.fa-youtube
             span Youtube
           a.podcast href="{{.Site.Params.podcastUrl}}" target="_blank"
             i.fa.fa-rss
             span Podcast
-          a.twitter href="{{.Site.Params.twitterUrl}}" target="_blank"
-            i.fa.fa-twitter
-            span Twitter
+          a.twitter href="{{.Site.Params.patreonUrl}}" target="_blank"
+            i.fab.fa-patreon
+            span Patreon
     section#authors
       h3 About the authors
       .wrapper

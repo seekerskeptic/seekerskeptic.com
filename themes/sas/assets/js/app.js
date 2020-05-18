@@ -17,7 +17,8 @@ let maskImages = []
 let radius = 4000
 
 document.addEventListener('DOMContentLoaded', init)
-window.addEventListener('resize', onWindowResize)
+//window.addEventListener('resize', onWindowResize)
+window.addEventListener("scroll", parallax);
 
 function init () {
   w = window.innerWidth
@@ -37,11 +38,14 @@ function init () {
   
   createKaleidoscope()
   animate()
+
+  document.documentElement.style.setProperty('--vh', `${h*0.01}px`);
 }
 
+
 function onMouseMove (e) {
-  //currentPos.x = e.data.global.x
-//  currentPos.y = e.data.global.y
+  currentPos.x = e.data.global.x
+  currentPos.y = e.data.global.y
 }
 
 function createKaleidoscope () {
@@ -106,4 +110,16 @@ function onWindowResize () {
   app.renderer.resize(w,h)
   
   kaleidoscope.position.set(w / 2, h / 2)
+  document.documentElement.style.setProperty('--vh', `${h*0.01}px`);
+}
+
+function parallax() {
+	const $slider = document.getElementById("slider");
+	const speed = 3;
+	var yPos = window.pageYOffset / speed;
+	yPos = -yPos;
+	
+	var coords = '0% '+ yPos + 'px';
+	
+	$slider.style.backgroundPosition = coords;
 }
